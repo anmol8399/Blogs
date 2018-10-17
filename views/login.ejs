@@ -1,0 +1,42 @@
+<% include ..\views\partials\header.ejs %>
+
+	<div class="ui main text conatiner segment">
+
+	<header class="jumbotron"><br><br><br>
+		<h1>Welcome to the login page</h1>
+	</header>
+
+	<!-- <div class="ui form">
+    	<div style="width: 30%; margin: 0 auto;">
+			<form action="/login" method="POST">
+				Username: <input class="form-control" type="text" name="username" placeholder="Username"><br><br>
+				Password: <input class="form-control" type="password" name="password" placeholder="Password"><br><br>
+				<button class="btn btn-primary form-control padding ">Login</button>
+			</form>
+		</div>
+	</div> -->
+	<form class="RaterInviteForm ui form" action="/login" method="POST">
+   <div class="ui form">
+      <div class="fields">
+         <div class="ten wide field">
+            <label>Username</label>
+            <div class="field">
+               <div class="ui input"><input type="text" name="username" value="" placeholder="Username"></div>
+            </div>
+         </div>
+      </div>
+      <div class="fields">
+         <div class="ten wide field">
+            <label>Password</label>
+            <div class="field">
+               <div class="ui input"><input type="password" name="password" value="" placeholder="Password"></div>
+            </div>
+         </div>
+      </div>     
+     
+   <button type="submit" class="ui primary button float-right">Login</button>
+</form>
+</div>	
+</div>
+
+<% include ..\views\partials\footer.ejs %>

@@ -1,0 +1,44 @@
+<% include ..\views\partials\header.ejs %>
+	
+	<div class="ui main text conatiner segment">
+	<header class="jumbotron">
+		<br><br><br><br><br>
+		
+		<h1>Welcome to the Signup Page</h1>	
+	</header>
+	<div class="row">
+    <div style="width: 30%; margin: 0 auto;">
+
+<!-- <form action="/register" method="POST">
+	<p>Username: <input class="form-control" type="text" name="username" placeholder="Name" required></p><br>
+	<p>Email Id: <input class="form-control" type="email" name="email" placeholder="Email Id" required></p><br>
+	<p>Password: <input class="form-control" type="password" name="password" placeholder="Password" required></p><br>
+	<button class="btn btn-primary form-control padding ">Signup</button>
+</form> -->
+<form class="RaterInviteForm ui form" action="/register" method="POST">
+   <div class="ui form">
+      <div class="fields">
+         <div class="ten wide field">
+            <label>Username</label>
+            <div class="field">
+               <div class="ui input"><input type="text" name="username" value="" placeholder="Username" required></div>
+            </div>
+         </div>
+      </div>
+      <div class="fields">
+         <div class="ten wide field">
+            <label>Password</label>
+            <div class="field">
+               <div class="ui input"><input type="text" name="password" value="" placeholder="Password" required></div>
+            </div>
+         </div>
+      </div>     
+     
+   <button type="submit" class="ui primary button float-right">Sign up</button>
+</form>
+</div>
+</div>
+</div>
+<!-- <li><a href="/login">Login</a></li>
+<li><a href="/logout">Logout</a></li> -->
+<% include ..\views\partials\footer.ejs %>
